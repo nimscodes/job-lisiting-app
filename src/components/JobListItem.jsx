@@ -2,7 +2,7 @@ import photosnap from '/images/photosnap.svg';
 
 const JobListItem = ({ job }) => {
   return (
-    <div className="md:w-full lg:w-5/6 w-[340px] mx-auto relative bg-white p-5 rounded-md shadow-xl border-l-4 border-desaturated-dark-cyan mb-6 md:mb-0">
+    <div className={`md:w-full lg:w-5/6 w-[340px] mx-auto relative bg-white p-5 rounded-md shadow-xl border-l-4 border-desaturated-dark-cyan ${!job.featured && 'border-none' } mb-6 md:mb-0`}>
       <div className="flex flex-col md:flex-row justify-between gap-4">
         <div className="flex flex-col md:flex-row gap-3">
           <span className="absolute md:static -top-6 flex items-center w-12 md:w-20">
