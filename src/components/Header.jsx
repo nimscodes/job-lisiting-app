@@ -19,7 +19,7 @@ const Header = ({ filters, clearFilters, clearFilter }) => {
     };
   });
   return (
-    <div className="w-full bg-desaturated-dark-cyan">
+    <div role="banner" className="w-full bg-desaturated-dark-cyan">
       <img src={isMobile ? mobile : desktop} alt="" />
       <div className={`${filters.length === 0 && 'hidden'} relative md:w-full lg:w-5/6 w-[340px] mx-auto`}>
         <div className="w-full absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 flex items-center justify-between bg-white rounded-md shadow-xl p-3">

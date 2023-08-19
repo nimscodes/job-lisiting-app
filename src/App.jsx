@@ -25,8 +25,11 @@ function App() {
 
   return (
     <div className="min-h-screen font-league-spartan bg-light-grayish-cyan-bg">
-      <Header filters={selectedFilters} clearFilters={clearFilters} clearFilter={clearFilter} />
-      <div className='p-4 mt-10'>
+      <div role='banner'>
+        <Header filters={selectedFilters} clearFilters={clearFilters} clearFilter={clearFilter} />
+      </div>
+      
+      <div role='main' className='p-4 mt-10'>
         <JobList data={data} selectedFilters={selectedFilters} updatedSelectedFilters={updatedSelectedFilters} />
       </div>
       
