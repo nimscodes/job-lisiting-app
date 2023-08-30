@@ -1,4 +1,5 @@
 import remove from '/images/icon-remove.svg';
+import PropTypes from 'prop-types'
 
 const FilterList = ({ filters, clearFilter }) => {
   const renderedList = filters.map((filter, index) => {
@@ -13,7 +14,12 @@ const FilterList = ({ filters, clearFilter }) => {
       </button>
     );
   });
-  return <>{renderedList}</>;
+  return <div>{renderedList}</div>;
 };
+
+FilterList.propTypes = {
+  filters: PropTypes.array.isRequired,
+  clearFilter: PropTypes.func.isRequired,
+}
 
 export default FilterList;

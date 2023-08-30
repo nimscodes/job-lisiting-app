@@ -3,6 +3,10 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      backgroundImage : {
+        'header-desktop': "url('/images/bg-header-desktop.svg')",
+        'header-mobile': "url('/images/bg-header-mobile.svg')"
+      },
       colors: {
         'desaturated-dark-cyan': 'hsl(180, 29%, 50%)',
         'light-grayish-cyan-bg': 'hsl(180, 52%, 96%)',
